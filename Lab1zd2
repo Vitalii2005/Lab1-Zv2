@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    // Вхідні дані
+    double x = 0.0004 * pow(10, 2);
+    double y = 7.7;
+    double z = 0.413 * pow(10, 2);
+
+    // Обчислення частин виразу
+    double part1 = sin(y - sqrt(abs(x)));
+    double part2 = (z - (x / y));
+    double part3 = sin(cos(z));
+
+    // Повний вираз
+    double s = part1 * part2 + part3;
+
+    // Вивід результату
+    std::cout << "Результат s = " << s << std::endl;
+
+    return 0;
+}
